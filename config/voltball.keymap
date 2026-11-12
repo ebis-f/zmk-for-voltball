@@ -61,6 +61,15 @@
     };
 
     behaviors {
+        lt_sspc: lt_sspc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_SSPC";
+            bindings = <&mo>, <&S_SPC>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
+        };
+
         hm: hm {
             compatible = "zmk,behavior-hold-tap";
             label = "HM";
@@ -85,6 +94,13 @@
     };
 
     macros {
+        S_SPC: S_SPC {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SPACE)>;
+            label = "S_SPC";
+        };
+
         PIN: PIN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -150,7 +166,7 @@
 &kp Q             &kp W         &kp E         &kp R        &kp T                                                               &kp Y         &kp U  &kp I     &kp O       &kp P
 &kp A             &kp S         &kp D         &kp F        &kp G                                                               &kp H         &kp J  &kp K     &kp L       &lt 5 MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B              &mt LS(LG(S)) COMMA      &kp PERIOD              &kp N         &kp M  &mkp MB1  &mkp MB2    &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &lt 2 SPACE  &lt 3 LS(SPACE)  &kp TAB                  &mt LEFT_ALT RIGHT_GUI  &ltq 1 ENTER                   &kp DELETE  &kp BACKSPACE
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &lt 2 SPACE  &lt_sspc 3 0  &kp TAB                  &mt LEFT_ALT RIGHT_GUI  &ltq 1 ENTER                   &kp DELETE  &kp BACKSPACE
             >;
 
             display-name = "BASE";
