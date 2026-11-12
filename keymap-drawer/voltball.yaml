@@ -37,11 +37,11 @@ layers:
   - LEFT ALT
   - LEFT WIN
   - {t: SPACE, h: CHARA}
-  - {t: Sft+SPACE, h: WORK}
+  - ''
   - TAB
   - {t: RIGHT GUI, h: LEFT ALT}
   - {t: ENTER, h: FUNCTION}
-  - RIGHT GUI
+  - DELETE
   - BACKSPACE
   FUNCTION:
   - ''
@@ -84,8 +84,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: RIGHT SHIFT, type: held}
-  - {t: ▽, type: trans}
   - DELETE
+  - BACKSPACE
   CHARA:
   - ESC
   - {t: ▽, type: trans}
@@ -127,13 +127,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - {t: ▽, type: trans}
   - DELETE
+  - BACKSPACE
   WORK:
   - ESC
-  - ''
   - Sft+F10
-  - {t: ▽, type: trans}
+  - '&LOCAL_ACCOUNT'
+  - '&ADMIN'
   - {t: ▽, type: trans}
   - +
   - '7'
@@ -141,20 +141,20 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&MAP_ENCODE'
+  - '&MAP_RM'
+  - '&MAP_F'
   - ''
   - ':'
   - '4'
   - '5'
   - '6'
   - '-'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '['
-  - ']'
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+B
   - {t: ▽, type: trans}
   - \
   - ;
@@ -166,11 +166,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - DELETE
   - BSPC
   MOUSE:
   - {t: ▽, type: trans}
@@ -271,3 +271,7 @@ combos:
   k: BT CLR ALL
 - p: [5, 9]
   k: BT CLR
+- p: [0, 10]
+  k: '&PIN'
+- p: [32, 20]
+  k: '&PW'
