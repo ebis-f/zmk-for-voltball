@@ -34,9 +34,14 @@
             key-positions = <16 18>;
         };
 
-        BT_CLR_ALL {
+        BT_CL_A {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <27 31>;
+        };
+
+        BT_CL {
+            bindings = <&bt BT_CLR>;
+            key-positions = <5 9>;
         };
     };
 
