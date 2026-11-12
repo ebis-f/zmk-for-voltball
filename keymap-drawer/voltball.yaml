@@ -83,7 +83,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: RIGHT SHIFT, type: held}
+  - {type: held}
   - DELETE
   - BACKSPACE
   CHARA:
@@ -125,7 +125,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&HANKAKU'
   - ''
   - DELETE
   - BACKSPACE
@@ -168,8 +168,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&HANKAKU'
+  - '&IME_TG'
   - DELETE
   - BSPC
   MOUSE:
