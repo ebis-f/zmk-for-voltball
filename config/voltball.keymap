@@ -94,6 +94,13 @@
     };
 
     macros {
+        IME_TG: IME_TG {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(GRAVE)>;
+            label = "IME_TG";
+        };
+
         S_SPC: S_SPC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
