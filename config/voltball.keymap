@@ -65,6 +65,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LT_SSPC";
             bindings = <&mo>, <&S_SPC>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <180>;
@@ -170,9 +171,9 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R        &kp T                                                               &kp Y         &kp U  &kp I     &kp O       &kp P
-&kp A             &kp S         &kp D         &kp F        &kp G                                                               &kp H         &kp J  &kp K     &kp L       &lt 5 MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B              &mt LS(LG(S)) COMMA      &kp PERIOD              &kp N         &kp M  &mkp MB1  &mkp MB2    &kp SLASH
+&kp Q             &kp W         &kp E         &kp R        &kp T                                                          &kp Y         &kp U  &kp I     &kp O       &kp P
+&kp A             &kp S         &kp D         &kp F        &kp G                                                          &kp H         &kp J  &kp K     &kp L       &lt 5 MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B         &mt LS(LG(S)) COMMA      &kp PERIOD              &kp N         &kp M  &mkp MB1  &mkp MB2    &kp SLASH
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &lt 2 SPACE  &lt_sspc 3 0  &kp TAB                  &mt LEFT_ALT RIGHT_GUI  &ltq 1 ENTER                   &kp DELETE  &kp BACKSPACE
             >;
 
@@ -181,10 +182,10 @@
 
         FUNCTION {
             bindings = <
-&none   &none   &none   &none       &none                                &none            &kp F7  &kp F8  &kp F9      &kp F10
-&trans  &trans  &trans  &kp LC(F5)  &kp F12                              &none            &kp F4  &kp F5  &kp F6      &kp F11
-&trans  &trans  &trans  &trans      &trans   &trans      &kp UNDERSCORE  &trans           &kp F1  &kp F2  &kp F3      &kp F12
-&trans  &trans  &trans  &trans      &trans   &trans      &trans          &kp RIGHT_SHIFT                  &kp DELETE  &kp BACKSPACE
+&none   &none   &none   &none       &none                                &none   &kp F7  &kp F8  &kp F9      &kp F10
+&trans  &trans  &trans  &kp LC(F5)  &kp F12                              &none   &kp F4  &kp F5  &kp F6      &kp F11
+&trans  &trans  &trans  &trans      &trans   &trans      &kp UNDERSCORE  &trans  &kp F1  &kp F2  &kp F3      &kp F12
+&trans  &trans  &trans  &trans      &trans   &trans      &trans          &none                   &kp DELETE  &kp BACKSPACE
             >;
 
             display-name = "FUNCTION";
@@ -192,10 +193,10 @@
 
         CHARA {
             bindings = <
-&kp ESC  &trans  &kp TILDE  &kp LEFT_BRACE    &kp RIGHT_BRACE                        &kp PLUS       &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp INTERNATIONAL_3
-&none    &trans  &kp CARET  &kp LESS_THAN     &kp GREATER_THAN                       &kp COLON      &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp EQUAL
-&none    &trans  &kp PIPE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT      &trans  &kp SEMICOLON  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp QUESTION
-&trans   &trans  &trans     &trans            &trans             &trans      &trans  &none                                                 &kp DELETE             &kp BACKSPACE
+&kp ESC  &trans  &kp TILDE  &kp LEFT_BRACE    &kp RIGHT_BRACE                          &kp PLUS       &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp INTERNATIONAL_3
+&none    &trans  &kp CARET  &kp LESS_THAN     &kp GREATER_THAN                         &kp COLON      &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp EQUAL
+&none    &trans  &kp PIPE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT      &trans    &kp SEMICOLON  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp QUESTION
+&trans   &trans  &trans     &trans            &trans             &trans      &HANKAKU  &none                                                 &kp DELETE             &kp BACKSPACE
             >;
 
             display-name = "CHARA";
@@ -206,7 +207,7 @@
 &kp ESC    &kp LS(F10)  &LOCAL_ACCOUNT  &ADMIN     &trans                                &kp PLUS   &kp N7  &kp N8  &kp N9      &kp N0
 &trans     &MAP_ENCODE  &MAP_RM         &MAP_F     &none                                 &kp COLON  &kp N4  &kp N5  &kp N6      &kp MINUS
 &kp LC(Z)  &kp LC(X)    &kp LC(C)       &kp LC(V)  &kp LC(B)  &trans      &kp BACKSLASH  &kp SEMI   &kp N1  &kp N2  &kp N3      &kp FSLH
-&trans     &trans       &trans          &trans     &trans     &trans      &trans         &trans                     &kp DELETE  &kp BSPC
+&trans     &trans       &trans          &trans     &trans     &trans      &HANKAKU       &IME_TG                    &kp DELETE  &kp BSPC
             >;
         };
 
