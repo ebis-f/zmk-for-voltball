@@ -83,6 +83,26 @@
             bindings = <&kp F10 &kp ENTER>;
             label = "IME";
         };
+        PW: PW {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N7 &kp N7 &kp LBKT &kp LS(G) &kp LS(S) &kp LS(S) &kp LS(G) &kp LS(S) &kp LS(S) &kp N2 &kp N0 &kp N1 &kp N9>;
+            label = "PW";
+        };
+
+        LOCAL_ACCOUNT: LOCAL_ACCOUNT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp O &kp B &kp E &kp BSLH &kp B &kp Y &kp P &kp A &kp S &kp S &kp N &kp R &kp O &kp DOT &kp C &kp M &kp D &kp ENTER>;
+            label = "LOCAL_ACCOUNT";
+        };
+
+        ADMIN: ADMIN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp D &kp M &kp I &kp N &kp ENTER>;
+            label = "ADMIN";
+        };
     };
 
     keymap {
