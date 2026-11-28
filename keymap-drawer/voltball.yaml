@@ -26,8 +26,8 @@ layers:
   - C
   - V
   - B
-  - {t: ',', h: Sft+Gui+S}
-  - .
+  - {t: '@', h: Sft+Gui+S}
+  - ','
   - N
   - M
   - '&mkp MB1'
@@ -37,11 +37,11 @@ layers:
   - LEFT ALT
   - LEFT WIN
   - {t: SPACE, h: CHARA}
-  - Sft+SPACE
+  - {t: SPACE, h: SCROLL}
   - {t: TAB, h: WORK}
   - {t: RIGHT GUI, h: LEFT ALT}
   - {t: ENTER, h: FUNCTION}
-  - DELETE
+  - .
   - BACKSPACE
   FUNCTION:
   - ''
@@ -125,8 +125,8 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&HANKAKU'
   - ''
+  - '&HANKAKU'
   - DELETE
   - BACKSPACE
   WORK:
@@ -155,8 +155,8 @@ layers:
   - Ctl+C
   - Ctl+V
   - Ctl+B
-  - {t: ▽, type: trans}
   - \
+  - _
   - ;
   - '1'
   - '2'
@@ -168,10 +168,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - '&HANKAKU'
   - '&IME_TG'
+  - '&HANKAKU'
+  - ''
   - DELETE
-  - BSPC
   MOUSE:
   - Q
   - W
@@ -252,12 +252,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held alternate}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&IME_TG'
   - Alt+F4
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DELETE
 combos:
 - p: [5, 7]
   k: {t: BT, h: '0'}
