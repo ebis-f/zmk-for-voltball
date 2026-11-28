@@ -37,8 +37,8 @@ layers:
   - LEFT ALT
   - LEFT WIN
   - {t: SPACE, h: CHARA}
-  - {t: '&S_SPC', h: WORK}
-  - TAB
+  - Sft+SPACE
+  - {t: TAB, h: WORK}
   - {t: RIGHT GUI, h: LEFT ALT}
   - {t: ENTER, h: FUNCTION}
   - DELETE
@@ -166,8 +166,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - '&HANKAKU'
   - '&IME_TG'
   - DELETE
